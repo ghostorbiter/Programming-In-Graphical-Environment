@@ -1,0 +1,15 @@
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\bin\Debug\tutorial3_WPF_ColorPreview.exe.config
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\bin\Debug\tutorial3_WPF_ColorPreview.exe
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\bin\Debug\tutorial3_WPF_ColorPreview.pdb
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\MainWindow.g.cs
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\App.g.cs
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\tutorial3_WPF_ColorPreview_MarkupCompile.cache
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\tutorial3_WPF_ColorPreview_MarkupCompile.lref
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\MainWindow.baml
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\tutorial3_WPF_ColorPreview.g.resources
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\tutorial3_WPF_ColorPreview.Properties.Resources.resources
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\tutorial3_WPF_ColorPreview.csproj.GenerateResource.cache
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\tutorial3_WPF_ColorPreview.csproj.CoreCompileInputs.cache
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\tutorial3_WPF_ColorPreview.exe
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\tutorial3_WPF_ColorPreview.pdb
+H:\Windows7\Desktop\yusupovy win\tutorial3_WPF_ColorPreview\tutorial3_WPF_ColorPreview\obj\Debug\GeneratedInternalTypeHelper.g.cs
