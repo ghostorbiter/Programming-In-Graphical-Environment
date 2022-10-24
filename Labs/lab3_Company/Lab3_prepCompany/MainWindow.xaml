@@ -1,0 +1,62 @@
+﻿<Window x:Class="Lab3_prepCompany.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab3_prepCompany"
+        mc:Ignorable="d"
+        Title="MainWindow" ResizeMode="NoResize" Height="600" Width="350" WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style x:Key="styleBoldItalic" TargetType="{x:Type TextBox}">
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+        <local:TonesToKilosConverter x:Key="tvoyaMamkaConverter"></local:TonesToKilosConverter>
+        <local:ArrivalConverter x:Key="gayTimeConverter"></local:ArrivalConverter>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListView Name="planesList" ItemsSource="{Binding}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBox Text="Planes: "></TextBox>
+                        <TextBlock>
+                            <Run Text="{Binding Brand}"/>
+                            <LineBreak/>
+                            <Run Text="{Binding Registration}"/>
+                            <LineBreak/>
+                            <Run Text="{Binding Weight, Converter={ StaticResource tvoyaMamkaConverter }}"/>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Column="1" Name="planeDetails" ItemsSource="{Binding SelectedItem.Flights, ElementName=planesList, Mode=OneWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBox Text="{Binding Number}"></TextBox>
+                        <Label>
+                            <Label.Content>
+                                <MultiBinding Converter="{StaticResource gayTimeConverter}" Mode="OneWay">
+                                    <Binding Path="DepartureTime"></Binding>
+                                    <Binding Path="Duration"></Binding>
+                                </MultiBinding>
+                            </Label.Content>
+                        </Label>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

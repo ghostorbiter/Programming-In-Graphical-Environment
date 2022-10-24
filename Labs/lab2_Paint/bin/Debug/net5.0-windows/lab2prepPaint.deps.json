@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "lab2prepPaint/1.0.0": {
+        "runtime": {
+          "lab2prepPaint.dll": {}
+        },
+        "resources": {
+          "pl-PL/lab2prepPaint.resources.dll": {
+            "locale": "pl-PL"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lab2prepPaint/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

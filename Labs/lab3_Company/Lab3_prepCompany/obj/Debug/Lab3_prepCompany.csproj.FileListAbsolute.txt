@@ -1,0 +1,16 @@
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\bin\Debug\Lab3_prepCompany.exe.config
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\bin\Debug\Lab3_prepCompany.exe
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\bin\Debug\Lab3_prepCompany.pdb
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\Lab3_prepCompany.csproj.AssemblyReference.cache
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\MainWindow.g.cs
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\App.g.cs
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\Lab3_prepCompany_MarkupCompile.cache
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\Lab3_prepCompany_MarkupCompile.lref
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\MainWindow.baml
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\Lab3_prepCompany.g.resources
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\Lab3_prepCompany.Properties.Resources.resources
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\Lab3_prepCompany.csproj.GenerateResource.cache
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\Lab3_prepCompany.csproj.CoreCompileInputs.cache
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\Lab3_prepCompany.exe
+H:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\Lab3_prepCompany.pdb
+h:\Windows7\Desktop\yusupovy win\Lab3_prepCompany\Lab3_prepCompany\obj\Debug\GeneratedInternalTypeHelper.g.cs
