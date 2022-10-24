@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DB Structure</title>
+	<link rel="icon" href = "h:\Windows7\Desktop\hmtl\db-icon.ico" type = "image/x-icon">
+	<style type="text/css">
+	
+		:root{
+			--width:500px;
+			--height:1px;
+			--fontSize: 20px;
+			--marginTopGrade: 155px;
+			--marginTopStudent: 400px;
+			--marginLeftGrade: 1000px;
+		}
+	
+		th{
+			font-family: Consolas, "Courier New", monospece;
+			font-weight: normal;
+			text-align:left;
+		}
+		
+		tr:nth-of-type(odd){
+			background-color: #CCC;
+		}
+	
+		.TableName{
+			text-decoration: underline;
+			font-weight: bolder;
+			font-size: var(--fontSize);
+			margin: 1em;
+			font-family: Corbel, Arial, sens-serif;
+			text-align: center;
+			background-color: #FFF;
+		}
+		
+		.FirstRow{
+			font-weight:bold;
+		}
+		
+		table{
+			position: absolute;
+			border: 1px solid black;
+			border-spacing: 0 0;
+		}
+		
+		table.Grade{
+			margin-top: var(--marginTopGrade);
+			margin-left: var(--marginLeftGrade);
+			float: right;
+		}
+		
+		table.Student{
+			margin-top: var(--marginTopStudent);
+			float:left;
+		}
+		
+		.rectangle {
+			position: absolute;
+			height: var(--height);
+			width: var(--width);
+			background-color: #555;
+		}
+		
+		#line1{
+			margin-top:107px;
+			margin-left:163px;
+			width:502px;
+		}
+		
+		#line2{
+			margin-top:507px;
+			margin-left:128px;
+			width:538px;
+		}
+		
+		#line3{
+			margin-left:665px;
+			margin-top:107px;
+			width: 1px;
+			height: 153px;
+		}
+		
+		#line4{
+			margin-left:665px;
+			margin-top:267px;
+			width: 1px;
+			height: 240px;
+		}
+		
+		#line5{
+			margin-top:260px;
+			margin-left:665px;
+			width:335px;
+		}
+		
+		#line6{
+			margin-top:267px;
+			margin-left:665px;
+			width:335px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th class="TableName" colspan="2"><h3>Course</h3></th>
+				</tr>
+			</thead>
+			<tr>
+				<th class="FirstRow">Column</th>
+				<th class="FirstRow">Type</th>
+			</tr>
+			<tr>
+				<th>ID</th>
+				<th>serial</th>
+			</tr>
+			<tr>
+				<th>Course name</th>
+				<th>varchar</th>
+			</tr>
+			<tr>
+				<th>Semester</th>
+				<th>varchar</th>
+			</tr>
+		</table>
+	</div>
+	
+	<div>
+		<table class="Grade">
+			<thead>
+				<tr>
+					<th class="TableName" colspan="2"><h3>Grade</h3></th>
+				</tr>
+			</thead>
+			<tr>
+				<th class="FirstRow">Column</th>
+				<th class="FirstRow">Type</th>
+			</tr>
+			<tr>
+				<th>CourseID</th>
+				<th>int</th>
+			</tr>
+			<tr>
+				<th>StudentID</th>
+				<th>int</th>
+			</tr>
+			<tr>
+				<th>FinalGrade</th>
+				<th>enum</th>
+			</tr>
+		</table>
+	</div>
+	
+	<div>
+		<table class="Student">
+			<thead>
+				<tr>
+					<th class="TableName" colspan="2"><h3>Student</h3></th>
+				</tr>
+			</thead>
+			<tr>
+				<th class="FirstRow">Column</th>
+				<th class="FirstRow">Type</th>
+			</tr>
+			<tr>
+				<th>ID</th>
+				<th>serial</th>
+			</tr>
+			<tr>
+				<th>Name</th>
+				<th>varchar</th>
+			</tr>
+			<tr>
+				<th>Surname</th>
+				<th>varchar</th>
+			</tr>
+			<tr>
+				<th>PESEL</th>
+				<th>int</th>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="rectangle" id="line1"></div>
+	<div class="rectangle" id="line2"></div>
+	<div class="rectangle" id="line3"></div>
+	<div class="rectangle" id="line4"></div>
+	<div class="rectangle" id="line5"></div>
+	<div class="rectangle" id="line6"></div>
+	
+</body>
+</html>

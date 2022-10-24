@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>Windows API - task 1</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h4>Windows API - part 1</h4>
+<p>Pong</p>
+<ul>
+  <li><a href="WinAPI_Pong.exe">Example app</a></li>
+  <li>Task description:
+    <ul>
+	 <li>application consists of <u>three windows</u>: main window, ball and paddle</li>
+	 <li>moving paddle with mouse pointer</li>
+	 <li>ball bounces off the walls of main window and paddle</li>
+	 <li>when the ball passes the paddle, the game is over - paddle and ball stop moving</li>
+    </ul>
+  </li>
+  <li>Functionality:
+    <ul>
+     <li>Main window:
+       <ul>
+	     <li>yellow, transparency 20%</li>
+	     <li>size: 200x300, prevent a size changing, but allow to change the window position</li>
+	     <li>at the start main window appears in the middle of the screen</li>
+       </ul>
+      </li>
+      <li>Ball:
+       <ul>
+         <li>red circle</li>
+         <li>changes the position of every 50ms</li>
+	   </ul>
+	   </li>
+	   <li>Paddle:
+	   <ul>
+         <li>paddle in the color of the active window's title bar</li>
+		 <li>mouse controls the middle point of paddle</li>
+		 <li>paddle moves at the bottom edge of the main window</li>
+       </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Additional requirements:
+    <ul>
+     <li>on the taskbar is only one window</li>
+     <li>application window always on top of other windows</li>
+     <li>combination Alt + F4 closes the application</li>
+	 <li>show system menu when you click Alt + Spacebar, or right-click on a window in the taskbar</li>
+    </ul>
+  </li>
+  <li>Tips:
+    <ul>
+      <li>SetLayeredWindowAttributes(), WS_EX_LAYERED, WS_MAXIMIZEBOX</li>
+	  <li>SetWindowRgn(), GetWindowRect(), MoveWindow()
+		<li>an example of creating and settings window region
+<pre>HRGN region=CreateEllipticRgn(0,0,10,10);
+SetWindowRgn(hWnd,region,true);</pre></li>
+	  </li>
+	  <li>SetTimer(), WM_TIMER</li>
+	  <li>GetCursorPos(), WM_MOUSEMOVE</li>
+	  <li>ClientToScreen(), ScreenToClient()</li>
+	  <li>InvalidateRect()</li>
+    </ul>
+  </li>
+  <li><i>Note: In all doubtful and untold aspects application should behave like example app.</i></li>
+</ul>
+
+<ul>
+	<li>Scoring:
+	<ul>
+		<li>proper layout of main window (color, size, position) - 3 points</li>
+		<li>proper layout of ball (color, size, shape) - 2 points</li>
+		<li>proper layout of paddle - 1 point</li>
+		<li>ball moves - 3 points</li>
+		<li>paddle moves - 2 points</li>
+		<li>paddle bounce the ball - 1 point</li>
+	</ul>
+	</li>
+</ul>
+
+<h4>Windows API - part 2 (home)</h4>
+<ul>
+  <li><a href="WinAPI_Pong2.exe">Example app</a></li>
+  <li>Task description:
+    <ul>
+	 <li>menu development</li>
+     <li>bouncing balls counter in pallet - centered</li>
+    </ul>
+  </li>
+  <li>Menu:
+       <ul>
+	     <li>properly working menu shortcuts</li>
+         <li>possibility of starting new game</li>
+		 <li>possibility of choosing the background color from dialog box</li>
+		 <li>possibility of setting bitmap as background</li>
+		 <li>bitmap in two variants: tile and stretched to the dimensions of the window</li>
+		 <li>it should update the menu depending on the selected option (as in the example app)</li>
+       </ul>
+  </li>
+  <li>Tips:
+    <ul>
+      <li>CreateCompatibleBitmap, BitBlt</li>
+      <li>CreatePatternBrush, SetStretchBltMode</li>
+      <li>TextOut, DrawText, SetTextAlign</li>
+	  <li>ChooseColor, GetOpenFileName</li>
+	  <li>CheckMenuItem, EnableMenuItem</li>
+    </ul>
+  </li>
+  <li><i>Note: In all doubtful and untold aspects application should behave like example app.</i></li>
+</ul>
+
+<ul>
+	<li>Approx scoring:
+	<ul>
+		<li>expansion of the menu and the option of a new game: 2 point</li>
+        <li>properly working shortcuts: 2 points</li>
+        <li>ball bouncing counter: 1 point</li>
+        <li>changing the background color: 2 points</li>
+        <li>displaying bitmap: 3 points</li>
+        <li>changing bitmap mode: 2 points</li>
+		<li><i>Note: To pass part 2, all of the functionality of the part 1 must be fulfilled.</i></li>
+	</ul>
+	</li>
+</ul>
+</body>
+</html>

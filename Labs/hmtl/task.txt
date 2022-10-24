@@ -1,0 +1,46 @@
+Website presents a simple database structure with 3 tables:
+
+* Students
+* Courses
+* Grades
+
+The table contents is as follows:
+      Course
+-------------------
+Column	   Type
+Id	       serial
+Course name	varchar
+Semester	varchar
+-------------------
+
+      Grade
+-------------------
+Column	   Type
+CourseId	    int
+StudentId	    int
+FinalGrade	   enum
+-------------------
+
+     Student
+-------------------
+Column	   Type
+Id	       serial
+Name	      varchar
+Surname     varchar
+PESEL	          int
+-------------------
+
+1. (1 pt) Website is titled 'DB Structure' with icon in the bar set to provided DB symbol
+1. (2 pt) There are 3 semantically correct tables (you can use https://www.tablesgenerator.com/html_tables# for faster table creation)
+1. (2 pt) Table name is:
+   * an HTML header of selected order
+   * underlined
+   * centered within table container
+   * its font is closest to Corbel
+   * has a margin corresponding to the used font size
+4. (2.5 pt) Table content has:
+   * a font closest to Consolas
+   * alternating lightgray background of rows (background has no gaps between table cells)
+   * its content aligned to left
+5. (2.5 pt) Tables are connected in order to indicate primary-foreign key links between tables
+6. (2 pt) CSS variables are utilized when positioning tables and their connectors (check https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties for reference)
