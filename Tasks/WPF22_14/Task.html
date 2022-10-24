@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Windows Presentation Foundation 2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h2>Image Slideshow</h2>
+        <h3>Laboratory Part</h3>
+        <ul>
+            <li><a href="WPF_14_Lab.exe">Sample Application</a></li>
+            <li>Main window:
+                <ul>
+                    <li>initial size: 800 x 600 px, minimum size: 800 x 600 px</li>
+                    <li>appears in the center of the screen</li>
+                    <li>main window contains:
+                        <ul>
+                            <li>menu at the top</li>
+                            <li>left side of application contains two expanders:
+                                <ul>
+                                    <li>Explorer - a tree view to explore and select (open) folder from the file system</li>
+                                    <li>File info - displays basic information about selected image file from the right side of application</li>
+                                </ul>
+                            <li>right side of application - displays list of image files from the selected (opened) folder</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Menu:
+                <ul>
+                    <li>File
+                        <ul>
+                            <li>Open folder - opens selected folder and display image files from this folder in the right side of application</li>
+                            <li>Exit - closes the application</li>
+                        </ul>
+                    </li>
+                    <li>About - displays short information about application</li>
+                </ul>
+            </li>
+            <li>Explorer:
+                <ul>
+                    <li>this is an expander with a tree view</li>
+                    <li>this expander should be expanded by default</li>
+                    <li>the tree view initially displays computer partitions</li>
+                    <li>allows to expand each partition and display child folders, and then expand each folder etc.</li>
+                    <li>user can select folder and its list of image files appears on the right side of app</li>
+                </ul>
+            </li>
+            <li>File info:
+                <ul>
+                    <li>this is an expander with a basic information about selected image file</li>
+                    <li>this expander should not be expanded by default</li>
+                    <li>displays basic information about selected image file or information: "No file selected"</li>
+                    <li>the basic information is: name, width, height and size in KB</li>
+                </ul>
+            </li>
+            <li>List of image files - right side of app:
+                <ul>
+                    <li>displays image files from selected (opened) folder</li>
+                    <li>each image file is represented by a simple tile with the file's name</li>
+                    <li>each tile has 1px border</li>
+                    <li>a single click on the tile displays information (in file info) about the image file represented by this tile</li>
+                    <li>list of image files displays vertical scroll bar when necessary</li>
+                </ul>
+            </li>
+            <li>Tips:
+            <ul>
+                <li>WindowStartupLocation, Window.MinHeight, Window.Height, Window.MinWidth, Window.Width</li>
+                <li>Menu, MenuItem</li>
+                <li>Expander, TreeView, FileInfo, Converter</li>
+                <li>Environment.GetLogicalDrives(), Directory.GetDirectories(), DirectoryInfo</li>
+                <li>ListView, ListView.ItemTemplate, DataTemplate</li>
+                <li>ListView.ItemsPanel, WrapPanel</li>
+                <li>Border</li>
+                <li>FolderBrowserDialog (System.Windows.Forms)</li>
+            </ul>
+            </li>
+            <li><i>Note: In all doubtful and untold aspects application should behave like example app (except possible bugs)</i></li>
+            <li>Scoring:
+            <ul>
+                <li>menu + overall application layout: <strong>2p</strong></li>
+                <li>tree view explorer: <strong>3p</strong></li>
+                <li>open folder and display its content in the right side of application (as tiles): <strong>3p</strong></li>
+                <li>display "No file selected" and hide table with file info when no file is selected: <strong>1p</strong></li>
+                <li>display file info: <strong>3p</strong></li>
+            </ul>
+            </li>
+        </ul>
+        
+        <h3>Home Part</h3>
+        <ul>
+        <li><a href="WPF_14_Home.exe">Sample Application</a></li>
+        <li><i>Meeting all the requirements of laboratory part is a precondition for further evaluation of the task</i></li>
+        <li>Main window:
+            <ul>
+                <li>main window is still splitted into 2 parts - left and right</li>
+                <li>there is a new expander in the left side of app - 'Slideshow'</li>
+                <li>the style of tiles in the right side of app is changed now</li>
+            </ul>
+        </li>
+        <li>Menu:
+            <ul>
+                <li>new menu item 'Start slideshow' which contains available slideshow effects (loaded dynamically)</li>
+                <li>click on the slideshow effect starts the slideshow with selected effect</li>
+            </ul>
+        </li>
+        <li>List of image files:
+            <ul>
+                <li>now each image file is represented by thumbnail consisting of icon (image preview) and file's name below the icon</li>
+                <li>each thumbnail has bottom and right side shadow effect</li>
+                <li>list of image files displays vertical scroll bar when necessary</li>
+            </ul>
+        </li>
+        <li>Slideshow expander:
+            <ul>
+                <li>contains combobox with all avaible slideshow effects</li>
+                <li>contains button 'Start slideshow'</li>
+            </ul>
+        </li>
+        <li>Slideshow:
+            <ul>
+                <li>when user click 'Start slideshow' in 'Slideshow expander' or select appropriate effect from the menu the slideshow starts</li>
+                <li>appears new window with fixed size (1024 x 768 px), without any border, and parent window is locked until the slideshow window is not closed</li>
+                <li>the new window is not displayed in the taskbar</li>
+                <li>the window with slideshow animation contains context menu which appears on right mouse button click:
+                    <ul>
+                        <li>it contains two options: 'Play/Pause slideshow' and 'Stop slideshow'</li>
+                        <li>'Play/Pause slideshow' pauses or resumes slideshow animation</li>
+                        <li>'Stop slideshow' closes slideshow window and unlock the main window</li>
+                    </ul>
+                </li>
+                <li>the slideshow consists of image files from selected (opened) folder</li>
+                <li>you should implement three transition effects:</li>
+                <ul>
+                    <li>horizontal effect - the images appear in the right edge and they are animated to the left edge</li>
+                    <li>vertical effect - the images appear in the bottom edge and they are animated to the top edge</li>
+                    <li>opacity effect - the opacity of previus image is animated to 0 and opacite of next image is animated to 1</li>
+                    <li>please see example app to see how described effects should look like</li>
+                </ul>
+            </ul>
+        </li>
+        <li>System of slideshow effects (plugins):
+            <ul>
+                <li>you have to implement three slideshow effects (plugins): horizontal, vertical and opacity - described above</li>
+                <li>the plugin system should be able to add new functionality without recompiling the application, by inserting a new DLL into directory with exe file</li>
+                <li>the plugin can be implemented as a class library (compiled to DLL file) which implements the appropriate interface - sample interface is presented below:
+                    <pre>
+    public interface ISlideshowEffect
+    {
+        string Name { get; }
+        void PlaySlideshow(Image imageIn, Image imageOut, double windowWidth, double windowHeight);
+    }
+                    </pre>
+                </li>
+                <li>the plugin interface should be implemented in a way that allows to share it with other developers</li>
+                <li>example plugin should be implemented in a way presented below:
+                    <pre>
+    public class SampleSlideshowEffect : ISlideshowEffect
+    {
+        public string Name
+        {
+            get
+            {
+                return "Name of Example Slideshow Effect";
+            }
+        }
+
+        public void PlaySlideshow(Image imageIn, Image imageOut, double windowWidth, double windowHeight)
+        {
+            // Animate between two images in appropriate way
+        }
+    }
+                    </pre>
+                </li>
+            </ul>
+        </li>
+        <li>Tips:
+            <ul>
+                <li>DataTemplate, Style</li>
+                <li>DoubleAnimation, Opacity</li>
+                <li>Build Path in Project properties</li>
+            </ul>
+        </li>
+        <li><i>Note: In all doubtful and untold aspects application should behave like example app (except possible bugs)</i></li>
+            <li>Scoring:
+                <ul>
+                    <li>appropriate style of image files in list of image files: <strong>2p</strong></li>
+                    <li>simple slideshow without animation effect and appropriate slideshow window style: <strong>2p</strong></li>
+                    <li>slideshow context menu: <strong>2p</strong></li>
+                    <li>slideshow effects: <strong>3p</strong> (<strong>1p</strong> for each effect)</li>
+                    <li>implementation of slideshow effects as a plugin system (interface and appropriate classes): <strong>3p</strong></li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>Windows Presentation Foundation - Binding</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h1>Company Data Editor</h1>
+<p>
+Your task is to create simple company editor, that allows administrators to change some of the basic information. It's laboratory task only (12pts). If any doubts according to task, please follow the sample application or ask your teacher.
+</p>
+<h2>Laboratory Part</h2>
+<ul>
+	<li><a href="WPFBind_14.exe">Sample Application</a></li>
+	<li>Layout:
+		<ul>
+			<li>The application startup location is set to screen center.</li>
+			<li>Application's size is set and fixed at 800x450.</li>
+			<li>Application is divided into two areas: Left one containing list of companies and width 200px, 
+			and right one, that fills all remaining area, containing some specific info about selected company.</li>
+			<ul>
+				<li>Companies list - Contains company's name.</li>
+				<li>Branches list - Contains branch's name. It's aligned to center and stacked up together.</li>
+				<li>Company Name and Phrase - non-editable text.</li>
+				<li>Branch Name - non-editable text in format '{Branch Name} {New Line} a {Company Name} Company'.</li>
+				<li>Branch Address - non-editable text.</li>
+				<li>Website - non-editable text.</li>
+				<li>Branch Contact E-mail - Editable text with e-mail address validation (simple - '.' and '@').</li>
+				<li>Branch Contact Phone - Editable text with phone number validation (simple - only digits).</li>
+				<li>Company description - Contains validation and characters counter.</li>
+			</ul>
+			<li>All text in application should be italic.</li>
+		</ul>
+	</li>
+	<li>Input Data:
+		<ul>
+			<li>Data is given as an .xml file.</li>
+		</ul>
+	</li>
+	<li>Binding:
+		<ul>
+			<li>Use Binding for all elements and UI changes.</li>
+			<li>No code-behind in C# is allowed. Except that which loads data.</li>
+			<li>You can only use Converters and Validators.</li>
+		</ul>
+	</li>
+	<li>Hints:
+		<ul>
+			<li>ListView, StackPanel, TextBlock, TextBox, IValueConverter, ValidationRule, MultiBinding, DataContext with ElementName, RelativeSource, StaticResource, ControlTemplate, DataTrigger</li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>Points:
+	<ul>
+		<li>Input Data:
+			<ul>
+				<li>Deserializing data from XML - <b>1p</b></li>
+			</ul>
+		</li>
+		<li>Layout:
+			<ul>
+				<li>Left area - companies list - <b>1p</b></li>
+				<li>Right area - branches list - <b>1p</b></li>
+			</ul>
+		</li>
+		<li>Binding:
+			<ul>
+				<li>Companies list - <b>1p</b></li>
+				<li>Branches list - <b>1p</b></li>
+				<li>Branch Address - <b>1p</b></li>
+				<li>Branch Name - Multibinding - <b>2p</b></li>
+				<li>Company Description (Validation) with Characters Counter - <b>1p</b></li>
+				<li>Company Name (Readonly) and Phrase (Readonly) and Website - <b>1p</b></li>
+			</ul>
+		</li>
+		<li>Validation:
+			<ul>
+				<li>Branch Contact - Email Validation - <b>1p</b></li>
+				<li>Branch Contact - Phone Validation - <b>1p</b></li>
+			</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+</body>
+
+</html>
