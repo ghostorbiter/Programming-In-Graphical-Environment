@@ -1,0 +1,15 @@
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\tutorial3_WPF.csproj.AssemblyReference.cache
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\App.g.cs
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\tutorial3_WPF_MarkupCompile.cache
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\bin\Debug\tutorial3_WPF.exe.config
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\bin\Debug\tutorial3_WPF.exe
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\bin\Debug\tutorial3_WPF.pdb
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\MainWindow.g.cs
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\tutorial3_WPF_MarkupCompile.lref
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\MainWindow.baml
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\tutorial3_WPF.g.resources
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\tutorial3_WPF.Properties.Resources.resources
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\tutorial3_WPF.csproj.GenerateResource.cache
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\tutorial3_WPF.csproj.CoreCompileInputs.cache
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\tutorial3_WPF.exe
+h:\Windows7\Desktop\yusupovy win\WinForms\tutorial3_WPF\tutorial3_WPF\obj\Debug\tutorial3_WPF.pdb
