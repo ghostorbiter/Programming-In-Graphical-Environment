@@ -1,0 +1,17 @@
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\bin\Debug\net5.0-windows\tutorial2_Gallery.exe
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\bin\Debug\net5.0-windows\tutorial2_Gallery.deps.json
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\bin\Debug\net5.0-windows\tutorial2_Gallery.runtimeconfig.json
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\bin\Debug\net5.0-windows\tutorial2_Gallery.runtimeconfig.dev.json
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\bin\Debug\net5.0-windows\tutorial2_Gallery.dll
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\bin\Debug\net5.0-windows\ref\tutorial2_Gallery.dll
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\bin\Debug\net5.0-windows\tutorial2_Gallery.pdb
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\tutorial2_Gallery.Form1.resources
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\tutorial2_Gallery.csproj.GenerateResource.cache
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\tutorial2_Gallery.GeneratedMSBuildEditorConfig.editorconfig
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\tutorial2_Gallery.AssemblyInfoInputs.cache
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\tutorial2_Gallery.AssemblyInfo.cs
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\tutorial2_Gallery.csproj.CoreCompileInputs.cache
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\tutorial2_Gallery.dll
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\ref\tutorial2_Gallery.dll
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\tutorial2_Gallery.pdb
+h:\Windows7\Desktop\yusupovy win\tutorial2_Gallery\tutorial2_Gallery\obj\Debug\net5.0-windows\tutorial2_Gallery.genruntimeconfig.cache
