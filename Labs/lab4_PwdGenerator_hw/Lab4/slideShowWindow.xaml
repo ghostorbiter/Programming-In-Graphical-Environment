@@ -1,0 +1,26 @@
+﻿<Window x:Class="Lab4.slideShowWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab4"
+        mc:Ignorable="d"
+        WindowStyle="None" BorderThickness="0"
+        Title="slideShowWindow" Height="768" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image x:Name="imgSlide" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Image Name="nextImgSlide" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <!--<ContextMenu>
+            <MenuItem Header="Play/Pause" Click="playPauseSlideShow"/>
+            <MenuItem Header="Stop" Click="stopSlideShow"/>
+        </ContextMenu>-->
+        <Menu HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0">
+            <Menu.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Play/Pause" Click="playPauseSlideShow"/>
+                    <MenuItem Header="Stop" Click="stopSlideShow"/>
+                </ContextMenu>
+            </Menu.ContextMenu>
+        </Menu>
+    </Grid>
+</Window>
