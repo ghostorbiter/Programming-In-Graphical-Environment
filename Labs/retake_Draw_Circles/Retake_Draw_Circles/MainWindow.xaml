@@ -1,0 +1,65 @@
+﻿<Window x:Class="Retake_Draw_Circles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Retake_Draw_Circles"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1500" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel HorizontalAlignment="Stretch" Background="LightGray">
+            <Menu DockPanel.Dock="Top" HorizontalAlignment="Left" Background="LightGray">
+                <MenuItem Header="File">
+                    <MenuItem Header="New" Click="newClick"/>
+                    <Separator/>
+                    <MenuItem Header="Open" Click="openClick"/>
+                    <Separator/>
+                    <MenuItem Header="Save" Click="saveClick"/>
+                </MenuItem>
+                <MenuItem Header="Exit" Click="exitClick"/>
+            </Menu>
+        </DockPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox x:Name="plotter" Header="Plotter" FontSize="17">
+                <DockPanel>
+                    <Canvas Name="circlesHere"/>
+                </DockPanel>
+            </GroupBox>
+
+            <GroupBox Grid.Column="1" Header="Circles" FontSize="17">
+                <DataGrid x:Name="circlesGrid" Background="LightGray" AutoGenerateColumns="True" FontSize="14" CanUserAddRows="True"/>
+            </GroupBox>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Background="White">
+                <ProgressBar Name="progressBar" Background="LightGray" Margin="10,40,10,40"/>
+            </Grid>
+            <GroupBox Grid.Column="1" Header="Actions" FontSize="17">
+                <StackPanel>
+                    <Button x:Name="startButton" Content="Start" Click="startClick"/>
+                    <Button x:Name="pauseButton" Content="Pause" Click="pauseClick"/>
+                    <Button x:Name="resetButton" Content="Reset" Click="resetClick"/>
+                </StackPanel>
+            </GroupBox>
+
+        </Grid>
+    </Grid>
+</Window>
